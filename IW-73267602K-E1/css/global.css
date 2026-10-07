@@ -1,0 +1,193 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(49, 0, 49);
+    font-family: 'Exo 2', sans-serif;
+}
+
+header {
+    background-image: url("img/fotoHeader.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+#barraMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: 'Unbounded', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-shadow: 3px 3px 10px black;
+}
+
+#menuIzq{
+    padding: 10px;
+    margin-left: 40px;
+    filter: drop-shadow(3px 3px 10px black);
+}
+
+header nav{
+    font-family: 'Unbounded', sans-serif;
+    padding: 20px;
+    text-shadow: 3px 3px 10px black;
+}
+
+.menuOpcion {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0px 20px;
+}
+
+main{
+    margin: 50px 20px 20px;
+    color: white;
+}
+
+#indice, #publicidad{
+    background-color: rgb(90, 0, 90);
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 20px black;
+    margin-bottom: 30px;
+}
+
+#indice ul{
+    list-style: none;
+    font-size: 30px;
+}
+
+#indice h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+#publicidad {
+    font-size: 20px;
+    font-style: italic;
+    height: 280px;
+}
+#publicidad p {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+.botonComprar {
+    background-color: yellow;
+    text-decoration: none;
+    font-family: 'Unbounded', sans-serif;
+    border-radius: 30px;
+    padding: 20px;
+    color: rgb(90, 0, 90);
+    box-shadow: 5px 5px 20px black;
+}
+
+.botonComprar:hover {
+    background-color: orange;
+}
+
+footer {
+    background-image: url("img/footer.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 40px 60px 60px;
+    text-shadow: 4px 4px 15px black;
+}
+
+footer h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#contactoIzq, #contactoDcha {
+    margin-bottom: 25px;
+}
+
+.links{
+    text-decoration: none;
+    color: yellow;
+}
+
+.links:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+footer p {
+    clear: both;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 2px solid white;
+    font-size: 20px;
+}
+
+#logoContacto {
+    display: none;
+}
+
+@media (min-width: 1140px) {
+
+    #indice, #publicidad {
+        box-sizing: border-box;
+    }
+    #indice {
+        margin-right: 20px;
+        float: left;
+        width: 20%;
+    }
+    #publicidad {
+        margin-left: 20px;
+        float: right;
+        width: 20%;
+        height: 380px;
+    }
+    .zonaCentral {
+        width: 55%;
+        margin: 0 auto 30px;
+    }
+
+    #contactoIzq {
+        float: left;
+        width: 35%;
+        text-align: left;
+    }
+
+    #contactoDcha {
+        float: right;
+        width: 35%;
+        text-align: right;
+    }
+
+    #logoContacto {
+        display: inline;
+        margin-top: 30px;
+        filter: drop-shadow(3px 3px 10px black); 
+    }
+}

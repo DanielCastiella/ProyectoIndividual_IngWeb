@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCASO - ENTRADAS</title>
+
+        <meta name="description" content="Ocaso, festival de música del atardecer al amanecer. Cartel, programa y entradas.">
+        <link rel="icon" href="css/img/logoIcono.png" type="image/png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/entradas.css">
+    </head>
+    <body>
+        <header>
+            <div id="barraMenu">
+                <div id="menuIzq">
+                    <a href="inicio.html"><img src="css/img/logoLetras.png" alt="Logo de Ocaso con nombre" width="190" height="55"></a>
+                </div>
+                <div id="menuDer">
+                    <nav>
+                        <a class="menuOpcion" href='inicio.html'>INICIO </a>
+                        <a class="menuOpcion" href='programa.html'>PROGRAMA</a>
+                        <a class="menuOpcion" href='entradas.html' style="color: yellow;"><strong>ENTRADAS</strong></a>
+                        <a class="menuOpcion" href=#contacto>CONTACTO</a>
+                    </nav>
+                </div>
+            </div>
+            <h1>ENTRADAS</h1>
+        </header>
+        <main>
+            <nav id="indice">
+                <h2>INDICE</h2>
+                <ul>
+                    <li><a href=#precios class="links">Precios</a></li>
+                    <li><a href=#formularioCompra class="links">Compra tu entrada</a></li>
+                </ul>
+            </nav>
+            <div class="zonaCentral">
+                <div id="precios">
+                    <h3>PRECIOS</h3>
+                    <table id="tablaPrecios">
+                        <thead>
+                            <tr>
+                                <th>Tipo de entrada</th>
+                                <th>Días</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">Entrada de día</td>
+                                <td>Viernes</td>
+                                <td>50€</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>60€</td>
+                            </tr>
+                            <tr>
+                                <td>Domingo</td>
+                                <td>40€</td>
+                            </tr>
+                            <tr>
+                                <td>Abono general</td>
+                                <td>Viernes, sábado y domingo</td>
+                                <td>120€</td>
+                            </tr>
+                            <tr class="vip">
+                                <td>Abono VIP</td>
+                                <td>Viernes, sábado y domingo</td>
+                                <td>230€</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Precios con IVA incluido. El abono VIP incluye zona exclusiva junto al escenario y acceso preferente.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div id="formularioCompra">
+                    <h3>COMPRA TU ENTRADA</h3>
+                    <form action="inicio.html" method="get">
+                        <fieldset id="datosPersonales">
+                            <legend>Datos personales:</legend>
+                            <label for="nombre">Nombre: </label>
+                            <input required type="text" name="nombre" id="nombre"><br>
+                            <label for="apellidos">Apellidos: </label>
+                            <input required type="text" name="apellidos" id="apellidos"><br>
+                            <label for="email">Correo Electrónico: </label>
+                            <input required type="email" name="email" id="email"><br>
+                            <label for="password">Contraseña: </label>
+                            <input required type="password" name="password" id="password"><br>
+                            <label for="fechaNac">Fecha de nacimiento: </label>
+                            <input required type="date" name="fechaNac" id="fechaNac"><br>
+                        </fieldset>
+                        <fieldset id="entrada">
+                            <legend>Entrada:</legend>
+                            <select id="tipoEntrada" name="tipoEntrada">
+                                <optgroup label="Entradas de día">
+                                    <option value="viernes">Viernes</option>
+                                    <option value="sabado">Sabado</option>
+                                    <option value="domingo">Domingo</option>
+                                </optgroup>
+                                <optgroup label="Abono de 3 días">
+                                    <option selected value="abonoGeneral">Abono general</option>
+                                    <option value="vip">VIP</option>
+                                </optgroup>
+                            </select>
+                            <p><strong>Extras:</strong></p>
+                            <input type="checkbox" name="parking" id="parking" value="parking">
+                            <label for="parking">Parking (15€)</label>
+                            <input type="checkbox" name="camping" id="camping" value="camping">
+                            <label for="camping">Camping (35€)</label>
+                            <input type="checkbox" name="taquilla" id="taquilla" value="taquilla">
+                            <label for="taquilla">Taquilla guardarropa (10€)</label>
+                        </fieldset>
+                        <fieldset id="camiseta">
+                            <legend>Camiseta de regalo (Opcional)</legend>
+                            <input type="radio" name="talla" id="s" value="s">
+                            <label for="s">S</label>
+                            <input type="radio" name="talla" id="m" value="m">
+                            <label for="m">M</label>
+                            <input type="radio" name="talla" id="l" value="l">
+                            <label for="l">L</label>
+                            <input type="radio" name="talla" id="xl" value="xl">
+                            <label for="xl">XL</label>
+                        </fieldset>
+                        <textarea name="comentarios" id="comentarios" placeholder="Comentarios"></textarea>
+                        <input required type="checkbox" name="condiciones" id="condiciones" value="condiciones">
+                        <label for="condiciones">Acepto la política de privacidad</label><br>
+                        <input type="submit" value="Enviar" class="botonFormulario"> 
+                        <input type="reset" value="Borrar" class="botonFormulario"> 
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer id="contacto">
+            <div id="contactoIzq">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>Telefono: 676 67 67 67</li>
+                    <li>Correo Electrónico: info@ocasofest.es</li>
+                    <li>Dirección: <a href='https://www.google.com/maps' class="links" target="_blank">Recinto Ocaso, Avenida del Mar 12</a></li>
+                </ul>
+            </div>
+            <img id="logoContacto" src="css/img/logoIcono.png" alt="Icono del logo de Ocaso" width="120" height="120">
+            <div id="contactoDcha">
+                <h2>Síguenos</h2>
+                <ul>
+                    <li><a href='https://www.instagram.com/' class="links" target="_blank">Instagram</a></li>
+                    <li><a href='https://www.tiktok.com/' class="links" target="_blank">TikTok</a></li>
+                    <li><a href='https://open.spotify.com/' class="links" target="_blank">PlayList en Spotify</a></li>
+                </ul>
+            </div>
+            <p>© 2026 Ocaso Festival</p>
+        </footer>
+    </body>
+</html>

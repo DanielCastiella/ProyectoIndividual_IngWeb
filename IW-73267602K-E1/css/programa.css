@@ -1,0 +1,100 @@
+#viernes, #sabado, #domingo, #normas, #consejos {
+    background-color: rgb(90, 0, 90);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 5px 5px 20px black;
+    margin-bottom: 30px;
+}
+
+.zonaCentral h3 {
+    color: yellow;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+}
+
+th {
+    font-family: 'Unbounded', sans-serif;
+    background-color: rgb(49, 0, 49);
+    color: white;
+    padding: 10px;
+    border: 2px solid rgb(49, 0, 49);
+}
+
+td {
+    padding: 10px;
+    border: 2px solid rgb(49, 0, 49);
+}
+
+tfoot td {
+    font-size: 16px;
+    font-style: italic;
+    border: none;
+}
+
+.destacado {
+    color: orange;
+    font-weight: bold;
+}
+
+.artista {
+    background-color: orange;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#normas p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#normas ol {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#normas li {
+    margin-bottom: 10px;
+}
+
+#consejos {
+    border: 3px dashed yellow;
+}
+
+#consejos h3 {
+    margin-bottom: 20px;
+    color: orange;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+}
+
+#consejos ul {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#consejos li {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1140px) {
+    #consejos {
+        box-sizing: border-box;
+        margin-left: 20px;
+        float: right;
+        width: 20%;
+    }
+    
+    #publicidad {
+        clear: right;
+    }
+}

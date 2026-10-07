@@ -1,0 +1,131 @@
+h3 {
+    color: yellow;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#precios {
+    background-color: rgb(90, 0, 90);
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px black;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+#tablaPrecios {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tablaPrecios th {
+    color: yellow;
+    font-family: 'Unbounded', sans-serif;
+    padding: 15px;
+    border: 2px solid orange;
+}
+
+#tablaPrecios td {
+    padding: 12px;
+    border: 2px solid orange;
+}
+
+.vip {
+    color: orange;
+    font-weight: bold;
+}
+
+#tablaPrecios tfoot td {
+    font-size: 16px;
+    font-style: italic;
+    border: none;
+    padding: 15px 0;
+}
+
+#formularioCompra {
+    background-color: rgb(90, 0, 90);
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px black;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#formularioCompra form {
+    font-size: 20px;
+}
+
+#formularioCompra fieldset {
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#formularioCompra legend {
+    font-family: 'Unbounded', sans-serif;
+    color: yellow;
+    padding: 0 10px;
+}
+
+#datosPersonales input, #tipoEntrada, #comentarios {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+#datosPersonales input:focus, #tipoEntrada:focus, #comentarios:focus {
+    outline: 3px solid yellow;
+}
+
+#entrada p, #camiseta p {
+    margin-bottom: 10px;
+}
+
+#entrada input, #camiseta input, #condiciones {
+    width: 20px;
+    height: 20px;
+}
+
+#comentarios {
+    height: 150px;
+}
+
+#condiciones {
+    margin-bottom: 30px;
+}
+
+.botonFormulario {
+    background-color: yellow;
+    color: rgb(90, 0, 90);
+    font-family: 'Unbounded', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.botonFormulario:hover {
+    background-color: orange;
+}
+
+@media (min-width: 1140px) {
+    #indice {
+        width: 23%;
+    }
+    .zonaCentral {
+        width: auto;
+        margin: 0 0 30px;
+        overflow: hidden;
+        padding: 0 30px;
+    }
+}
